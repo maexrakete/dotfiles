@@ -108,8 +108,6 @@ then
   fi;
 fi;
 
-alias aws-login="eval $(aws ecr get-login --region eu-west-1 --no-include-email)"
-alias set-hostname="export HOSTNAME=$(ip -4 a | grep enp | grep -Eo "inet (addr:)?([0-9]*\\.){3}[0-9]*" | grep -Eo "([0-9]*\\.){3}[0-9]*" | grep -v "127.0.0.1" | grep -v "172.")"
 alias bye-docker='docker stop $(docker ps -a -q)'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -5,8 +5,8 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(setq user-full-name "Patrick Haun")
-(setq user-mail-address "bomgar85@googlemail.com")
+(setq user-full-name "Max Kiehnscherf")
+(setq user-mail-address "max.kiehnscherf@googlemail.com")
 
 (add-to-list 'load-path (expand-file-name "subconfigs" user-emacs-directory))
 (require 'init-subconfigs)
