@@ -50,3 +50,9 @@ echo 'AddKeysToAgent  yes' >> ~/.ssh/config
 echo '### Setup NVM'
 
 nvm install node
+
+echo '### Setup docker'
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
