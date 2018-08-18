@@ -111,4 +111,7 @@ fi;
 alias bye-docker='docker stop $(docker ps -a -q)'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-source /usr/share/nvm/init-nvm.sh
+alias loadnvm='source /usr/share/nvm/init-nvm.sh'
+
+# added by travis gem
+[ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
