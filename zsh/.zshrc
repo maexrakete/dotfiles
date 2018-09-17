@@ -23,7 +23,7 @@ ZSH_THEME="spaceship"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -57,9 +57,13 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+ZSH_TMUX_AUTOSTART="true"
+
 plugins=(
-  git
+    git
+    tmux
 )
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,7 +115,8 @@ fi;
 alias bye-docker='docker stop $(docker ps -a -q)'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-alias loadnvm='source /usr/share/nvm/init-nvm.sh'
 
 # added by travis gem
 [ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
+
+alias loadnvm = '[-s "/usr/share/nvm/init-nvm.sh" ] && . "/usr/share/nvm/init-nvm.sh"'
