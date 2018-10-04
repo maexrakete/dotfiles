@@ -116,7 +116,7 @@ then
   fi;
 fi;
 
-alias bye-docker="docker stop $(docker ps -a -q)"
+alias bye-docker='docker stop $(docker ps -q)'
 alias dockercleancontainers="docker ps -a --no-trunc | grep 'Exit' | awk '{print $1}' | xargs docker rm"
 alias dockercleanimages="docker images --no-trunc | grep none | awk '{print $3}' | xargs docker rmi"
 alias dockerclean="dockercleancontainers && dockercleanimages"
@@ -126,5 +126,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # added by travis gem
 [ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh
 
-alias loadnvm='[-s "/usr/share/nvm/init-nvm.sh" ] && . "/usr/share/nvm/init-nvm.sh"'
+alias loadnvm='[ -s "/usr/share/nvm/init-nvm.sh" ] && . "/usr/share/nvm/init-nvm.sh"'
 export GPG_TTY=$(tty)
+
+[ -f .zshrc.local ] && source .zshrc.local
