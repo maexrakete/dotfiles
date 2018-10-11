@@ -46,6 +46,9 @@ systemctl --user enable ssh-agent
 systemctl --user start ssh-agent
 echo 'AddKeysToAgent  yes' >> ~/.ssh/config
 
+systemctl --user enable emacs
+systemctl --user start emacs
+
 ##################################################
 echo '### Setup NVM'
 

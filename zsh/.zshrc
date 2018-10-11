@@ -120,6 +120,7 @@ alias bye-docker='docker stop $(docker ps -q)'
 alias dockercleancontainers="docker ps -a --no-trunc | grep 'Exit' | awk '{print $1}' | xargs docker rm"
 alias dockercleanimages="docker images --no-trunc | grep none | awk '{print $3}' | xargs docker rmi"
 alias dockerclean="dockercleancontainers && dockercleanimages"
+alias emacs="emacsclient -nw"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
