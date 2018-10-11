@@ -51,5 +51,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (set-frame-font "Fira Mono For Powerline 12" t t)
 
 (setq x-select-enable-clipboard t)
-
 (setq custom-file "/dev/null")
+
+(global-linum-mode t)
