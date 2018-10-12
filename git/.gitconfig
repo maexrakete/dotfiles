@@ -1,0 +1,24 @@
+[user]
+	email = max.kiehnscherf@gmail.com
+	name = Max Kiehnscherf
+	signingkey = 428497106EC97348
+[credential]
+ helper = cache
+[core]
+        editor = vim
+[color]
+  ui = true
+[color "status"]
+  added = green bold
+  changed = magenta bold
+  untracked = red bold
+[push]
+  default = tracking
+[pull]
+  rebase = true
+[commit]
+        gpgsign = true
+
+[alias]
+	co = checkout
+	st = status
