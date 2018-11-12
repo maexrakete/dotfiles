@@ -122,7 +122,7 @@ alias dockercleanimages="docker images --no-trunc | grep none | awk '{print $3}'
 alias dockerclean="dockercleancontainers && dockercleanimages"
 alias emacs="emacsclient -nw"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # added by travis gem
 [ -f /home/max/.travis/travis.sh ] && source /home/max/.travis/travis.sh

@@ -49,5 +49,5 @@
 (require 'init-grep)
 (require 'init-confmode)
 (require 'init-which-key)
-
+(require 'init-eyebrowse)
 (provide 'init-subconfigs)
