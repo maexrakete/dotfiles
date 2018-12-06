@@ -70,22 +70,21 @@ label-dimmed-underline = ${BAR.background}
 label-focused = %icon% %{T8} %name% %{T-}
 label-focused-foreground = #fff
 label-focused-background = #773f3f3f
-label-focused-underline = #c9665e
+label-focused-underline = #00acee
 label-focused-font = 3
 label-focused-padding = 4
 
 label-unfocused = %icon% %{T8} %name% %{T-}
-label-unfocused-foreground = #666
-label-unfocused-underline = #c9665e3f
+label-unfocused-foreground = #888
+label-unfocused-underline = #aaffffff
 label-unfocused-font = 3
 label-unfocused-padding = 4
 
-label-active = %icon% %{T8} %name% %{T-}
-label-active-foreground = #fff
-label-active-background = #773f3f3f
-label-active-underline = #c9665e
-label-active-font = 3
-label-active-padding = 4
+label-visible = %icon%  %{T8} %name% %{T-}
+label-visible-foreground = #666
+label-visible-underline = #c9665e3f
+label-visible-font = 3
+label-visible-padding = 4
 
 label-occupied = %icon% %{T8} %name% %{T-}
 label-occupied-foreground = #dd
