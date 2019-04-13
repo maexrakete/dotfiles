@@ -41,13 +41,13 @@ padding-left = 2
 module-margin-left = 3
 module-margin-right = 3
 
-font-0 = NotoSans-Regular:size=8;1
+font-0 = NotoSans-Regular:size=8;2
 font-1 = unifont:size=6;-2
-font-2 = "Font Awesome 5 Free:pixelsize=8;0"
+font-2 = "Font Awesome 5 Free:pixelsize=8;1"
 font-3 = NotoSans-Regular:size=8;0
 font-4 = MaterialIcons:size=10;0
-font-5 = "Font Awesome 5 Free:style=Regular:pixelsize=8;0"
-font-6 = "Font Awesome 5 Free:style=Solid:pixelsize=8;0"
+font-5 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-6 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 font-7 = NotoSans-Regular:size=8;0
 
 modules-left = i3
@@ -82,7 +82,7 @@ label-unfocused-padding = 4
 
 label-visible = %icon%  %{T8} %name% %{T-}
 label-visible-foreground = #666
-label-visible-underline = #c9665e3f
+label-visible-underline = #aaffffff
 label-visible-font = 3
 label-visible-padding = 4
 
