@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 setxkbmap -option caps:escape
+setxkbmap us
 
 autoload -U zmv
 alias mmv='noglob zmv -W'
