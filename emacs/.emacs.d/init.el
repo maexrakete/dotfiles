@@ -8,11 +8,12 @@
 (setq user-full-name "Max Kiehnscherf")
 (setq user-mail-address "max.kiehnscherf@googlemail.com")
 
+(add-to-list 'load-path (expand-file-name "overrides" user-emacs-directory))
+(require 'init-overrides)
+
 (add-to-list 'load-path (expand-file-name "subconfigs" user-emacs-directory))
 (require 'init-subconfigs)
 
-(add-to-list 'load-path (expand-file-name "overrides" user-emacs-directory))
-(require 'init-overrides)
 
 ;; esc quits
 (defun minibuffer-keyboard-quit ()

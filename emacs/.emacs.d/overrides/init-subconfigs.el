@@ -1,8 +1,0 @@
-(require 'init-packages)
-(require 'init-custom-functions)
-(require 'init-imenu)
-(require 'init-smartparens)
-(require 'init-ace-window)
-(require 'init-eyebrowse)
-(require 'init-neotree)
-(provide 'init-overrides)
