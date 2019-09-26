@@ -52,6 +52,7 @@ font-7 = NotoSans-Regular:size=8;0
 
 modules-left = i3
 modules-right = cpu memory
+tray-position = right
 
 [module/i3]
 type = internal/i3
