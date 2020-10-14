@@ -1,4 +1,4 @@
-(use-package monokai-alt-theme
+t (use-package monokai-alt-theme
   :ensure t
   :init (custom-set-variables
  ;; custom-set-variables was added by Custom.
