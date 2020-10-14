@@ -51,8 +51,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
           (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up)))
 
 
-(set-default-font "Fira Mono For Powerline 12")
-(set-frame-font "Fira Mono For Powerline 12" t t)
+(set-frame-font "Fira Mono For Powerline 12")
 
 (setq x-select-enable-clipboard t)
 (setq custom-file "/dev/null")
