@@ -3,16 +3,19 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+
+(setq package-enable-at-startup nil)
 
 (setq user-full-name "Max Kiehnscherf")
 (setq user-mail-address "max.kiehnscherf@googlemail.com")
+(setq custom-safe-themes t)
 
 (add-to-list 'load-path (expand-file-name "subconfigs" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "overrides" user-emacs-directory))
 
 (require 'init-subconfigs)
 (require 'init-overrides)
+
 
 
 
