@@ -1,3 +1,0 @@
-[submodule "emacs/.emacs.d/subconfigs"]
-	path = emacs/.emacs.d/subconfigs
-	url = git@github.com:brocode/emacs_subconfigs.git

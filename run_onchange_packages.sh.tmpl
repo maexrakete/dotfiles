@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Triggered changed package hook on OS {{ .chezmoi.os }}"
+
+{{ if eq .chezmoi.os "linux" -}}
+
+pamac_packages=( {{.packages.linux.arch.pamac | quoteList | join " " }})
+
+sudo pamac install --no-confirm "${pamac_packages[@]}"
+
+{{ end -}}

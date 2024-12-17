@@ -1,0 +1,27 @@
+services:
+  ssh-agent: |
+    [Unit]
+    Description=SSH key agent
+
+    [Service]
+    Type=forking
+    Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
+    ExecStart=/usr/bin/ssh-agent -a $SSH_AUTH_SOCK
+
+    [Install]
+    WantedBy=default.target
+  emacs: |
+    [Unit]
+    Description=Emacs: the extensible, self-documenting text editor
+
+    [Service]
+    Type=forking
+    ExecStart=/usr/bin/emacs --daemon
+    ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
+    Environment=SSH_AUTH_SOCK=%t/ssh-agent.socket
+    Restart=always
+
+    [Install]
+    WantedBy=default.target
+
+

@@ -1,0 +1,21 @@
+packages:
+  linux:
+    arch:
+      pamac:
+        - docker
+        - emacs
+        - dunst
+        - otf-firamono-nerd
+        - otf-monaspace-nerd
+        - ttf-fira-code
+        - ttf-firacode-nerd
+        - ttf-hack
+        - wezterm
+        - woff-fira-code
+        - woff2-fira-code
+        - lazygit
+        - jless
+        - ripgrep
+        - neovim
+
+

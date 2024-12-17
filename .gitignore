@@ -1,5 +1,0 @@
-services/.config/systemd/user/default.target.wants
-emacs/.emacs.d/projectile.cache
-emacs/.emacs.d/.python-environments
-emacs/.emacs.d/.cache
-emacs/.emacs.d/.lsp-session-v1

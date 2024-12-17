@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Triggered changed service hook"
+
+mkdir -p ~/.config/systemd/user
+
+{{ range $key, $value := .services -}}
+
+
+	echo "{{$value | html}}" > ~/.config/systemd/user/{{$key}}.service
+        systemctl --user enable --now {{$key}}
+        systemctl --user start --now {{$key}}
+
+
+{{ end -}}
