@@ -2,6 +2,7 @@ packages:
   linux:
     arch:
       pamac:
+        - tig
         - docker
         - emacs
         - dunst
@@ -17,5 +18,7 @@ packages:
         - jless
         - ripgrep
         - neovim
+        - kubectl
+        - k9s
 
 
